@@ -10,5 +10,5 @@ Console.Clear();
 int num = new Random().Next(100, 1000);
 int a = num / 100;
 int b = num % 10;
-int c = a * 10 + b;
-Console.WriteLine($"{num} -> {c}");
+// int c = a * 10 + b;
+Console.WriteLine($"{num} -> {b}");
