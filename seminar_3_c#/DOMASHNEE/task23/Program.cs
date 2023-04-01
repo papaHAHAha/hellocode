@@ -5,7 +5,7 @@
 Console.Clear();
 Console.Write("write N: ");
 int n = int.Parse(Console.ReadLine());
-for(int i=1; i <n+1; i++)
+for (int i = 1; i < n + 1; i++)
 {
   Console.Write($"{Math.Pow(i, 3)} ");
 }
