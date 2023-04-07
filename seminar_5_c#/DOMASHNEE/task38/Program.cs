@@ -30,7 +30,7 @@ int FindMin(int[] array)
 }
 Console.Clear();
 int[] startArray = getArray(4, 1, 20);
-Console.WriteLine($"[{String.Join(", ", startArray)}]";
+Console.WriteLine($"[{String.Join(", ", startArray)}]");
 Console.WriteLine($"MAX = {FindMax(startArray)}");
 Console.WriteLine($"MIN = {FindMin(startArray)}");
 Console.WriteLine($"разница между максимальным и минимальным = {FindMax(startArray) - FindMin(startArray)}");
