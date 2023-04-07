@@ -10,19 +10,26 @@
 [10, 11, 12, 13, 14]-> 5
 
 */
-int[] newArray(int size)
+int[] newArray(int size, int minValue, int maxValue)
 {
   int[] result = new int[size];
-  for (int i = 1; i < size; i++)
+  for (int i = 0; i < size; i++)
   {
-    result[i] = new Random().Next(1, 150);
+    result[i] = new Random().Next(minValue, maxValue + 1);
   }
   return result;
 }
-int[] FindElements(int[] array, int sum)
+int FindElements(int[] array, int leftRange, int rightRange)
 {
   int sum = 0;
-  for (int i = 0; i <array.Length; i++)
+  foreach (int item in array)
+  {
+    if(item >= leftRange && item <= rightRange) sum++;
+  }
+  return sum;
 }
-
+Console.Clear();
+int[] startArray = newArray(123, 0, 200);
+Console.WriteLine(String.Join(" ", startArray));
+Console.WriteLine($"Кол-во элементов в отрезке [10;99] = {FindElements(startArray, 10, 99)}");
 
