@@ -24,7 +24,8 @@ int FindElements(int[] array, int leftRange, int rightRange)
   int sum = 0;
   foreach (int item in array)
   {
-    if(item >= leftRange && item <= rightRange) sum++;
+    if(item >= leftRange && item <= rightRange)
+    sum++;
   }
   return sum;
 }
