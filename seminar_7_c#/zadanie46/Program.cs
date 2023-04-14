@@ -1,16 +1,4 @@
-﻿// Задача 48. Задайте
-// двумерный массив размера m и n, каждый элемент
-// в массиве находится по формуле: A[i,j] = i+j
-// выведите полученный массив на экран
-
-// m = 3, n = 4.
-
-// 0 1 2 3
-
-// 1 2 3 4
-
-// 2 3 4 5
-using System;
+﻿using System;
 using static System.Console;
 
 Clear();
@@ -34,7 +22,7 @@ for (int i = 0; i < m; i++)
 {
 for (int j = 0; j < n; j++)
 {
-result[i, j] = i+j;
+result[i, j] = new Random().Next(minValue, maxValue + 1);
 }
 }
 return result;
