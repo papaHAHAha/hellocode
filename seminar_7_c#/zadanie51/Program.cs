@@ -14,7 +14,7 @@ int rows = int.Parse(Console.ReadLine());
 Console.Write("Введите количество столбцов массива: ");
 int columns = int.Parse(Console.ReadLine());
 
-int[,] array = GetArray(rows, columns, 0, 10);
+int[,] array = GetArray(rows, columns, 0, 9);
 PrintArray(array);
 Console.WriteLine();
 Console.WriteLine($" Сумма элементов главной диагонали -> {GetSum(array)}");
